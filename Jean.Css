@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 40px;
+  background-color: #fdf8f5;
+  font-family: Arial, sans-serif;
+}
+
+.divcontainer {
+   
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  grid-template-columns:repeat(3 1fr );  
+  gap: 30px;
+}
+
+.Product h1 {
+  font-size: 32px;
+  margin-bottom: 25px;
+   grid-column: 1 / -1;
+}
+
+.Product {
+ 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  
+}
+
+.product .img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+
+
+.product button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  width: 150px;
+  height: 45px;
+
+  margin: -22px auto 15px;
+
+  background-color: white;
+  border: 1px solid #9b5c3d;
+  border-radius: 25px;
+
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.product button img {
+  width: 20px;
+  height: 20px;
+}
+
+
+
+.para {
+  color: #777;
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+
+
+.header {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.price {
+  display: block;
+  color: #c45a28;
+  font-size: 17px;
+  margin-top: 8px;
+}
+
+.cart { 
+  background-color: white;
+  border-radius: 12px;
+  padding: 25px;
+  height: fit-content;
+}
+
+.cart h2 {
+  color: #c45a28;
+  margin-top: 0;
+}
+
+.cart .img {
+  width: 150px;
+  display: block;
+  margin: 40px auto 20px;
+}
+
+.cart p {
+  text-align: center;
+  color: #777;
+}
+
+
+
+
+.attribution {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+}
+.confirm-box {
+  margin-top: 25px;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.total strong {
+  font-size: 20px;
+}
+
+.confirm-btn {
+  width: 100%;
+
+  padding: 14px;
+
+  border: none;
+  border-radius: 25px;
+
+  background-color: #c45a28;
+  color: white;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.confirm-btn:hover {
+  background-color: #a8441d;
+}
+
+
+
+
+@media (max-width: 900px) {
+
+  .divcontainer {
+    grid-template-columns: 1fr;
+  }
+
+  .Product {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cart {
+    width: 100%;
+  }
+}
+
+
+
+
+@media (max-width: 600px) {
+
+  body {
+    padding: 20px;
+  }
+
+  .Product {
+    grid-template-columns: 1fr;
+  }
+
+  .product .img {
+    height: auto;
+  }
+
+  .cart {
+    margin-top: 20px;
+  }
+}
