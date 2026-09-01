@@ -241,7 +241,6 @@ function updateCart() {
   let totalPrice = 0;
 
 
-  // CART ITEMS
 
   cart.forEach((item, index) => {
 
@@ -347,7 +346,7 @@ confirmBtn.addEventListener("click", () => {
 
 
   orderItems.innerHTML = "";
-
+659506
   let total = 0;
 
 
@@ -384,7 +383,7 @@ confirmBtn.addEventListener("click", () => {
             ${item.quantity}x
           </span>
 
-          <span class="unit">
+          <span class="unit">659506
             $${item.price.toFixed(2)}
           </span>
 
